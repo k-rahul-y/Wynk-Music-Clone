@@ -1,0 +1,81 @@
+
+.edit {
+    font-family: 'Sedgwick Ave', cursive;
+    padding-left: 400px;
+}
+
+.Head {
+    font-family: 'Sedgwick Ave', cursive;
+    margin-bottom: 60px;
+    padding-left: 130px;
+    text-align: center;
+    list-style: none;
+}
+
+.img {
+    margin-top: 100px;
+    float: right;
+    position: static;
+    height: 403px;
+    width: 400px;
+    margin-right: 100px;
+}
+
+#btn {
+    font-family: 'Sedgwick Ave', cursive;
+    width: 13%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 37px;
+    background-color: rgb(0, 200, 250);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: none;
+}
+#btn:hover{
+    background-color: aqua;
+}
+
+#name {
+    font-size: 15px;
+    font-family: 'Sedgwick Ave', cursive;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+}
+
+#email {
+    font-size: 15px;
+    font-family: 'Sedgwick Ave', cursive;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+}
+
+#Company {
+    font-size: 15px;
+    font-family: 'Sedgwick Ave', cursive;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+}
+
+#Message {
+    font-size: 15px;
+    font-family: 'Sedgwick Ave', cursive;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+}
+
+.bg {
+    background-color: rgb(219, 219, 219);
+}
+
+btn:hover {
+    color: rgb(175, 175, 175);
+}
