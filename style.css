@@ -183,5 +183,8 @@ nav ul li a{
            left: 0;
            bottom: -25px;
         }
-
+        .songItem{
+            margin-left: 0;
+            width: 54vh;
+        }
     }
