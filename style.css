@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 body{
-    background-color: antiquewhite;
+    background-color: rgb(207 115 199 / 87%);
 }
 
 *{
@@ -24,6 +24,7 @@ nav ul{
 
 nav ul li{
     padding: 0 12px;
+    cursor: pointer;
 }
 nav ul li a{
     text-decoration: none;
@@ -126,4 +127,61 @@ nav ul li a{
         justify-content: space-between;
         align-items: center;
         border-radius: 34px;
+    }
+
+    @media only screen and (max-width: 1600px) {
+        body {
+            background-color: rgb(116, 255, 232);
+        }
+        
+    .container{
+        background-position: -15vh;
+    }
+    }
+    @media only screen and (max-width: 827px ) {
+        body {
+            background-color: rgb(0, 255, 255);
+            font-size: 13px;
+        }
+        .container{
+            background-image: none;
+        }
+        .songItem{
+            margin-left: 37px;
+            width: 60vh;
+        }
+        .songInfo span{
+            position: absolute;
+            left: 0;
+            bottom: -25px;
+        }
+        
+    }
+    @media only screen and (max-width: 715px) {
+        body {
+            background-color: rgb(0, 0, 0);
+            font-size: 13px;
+        }
+        .songItem{
+            margin-left: 10px;
+            width: 40vh;
+        }
+        .songInfo span{
+           position: absolute;
+           left: 0;
+           bottom: -25px;
+        }
+
+    }
+    @media only screen and (max-width: 558px) {
+        body {
+            background-color: rgb(255, 104, 104);
+            font-size: 13px;
+        }
+        .songInfo span{
+           position: absolute;
+           left: 0;
+           bottom: -25px;
+        }
+
     }
