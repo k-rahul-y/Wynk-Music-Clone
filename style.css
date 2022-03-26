@@ -157,7 +157,7 @@ nav ul li a{
         }
         
     }
-    @media only screen and (max-width: 715px) {
+   @media only screen and (max-width: 715px) {
         body {
             background-color: rgb(0, 0, 0);
             font-size: 13px;
@@ -185,6 +185,23 @@ nav ul li a{
         }
         .songItem{
             margin-left: 0;
-            width: 54vh;
+            width: 37vh;
         }
+
+    }
+    @media only screen and (max-width: 427px) {
+        body {
+            background-color: rgb(116, 114, 114);
+            font-size: 11px;
+        }
+        .songInfo span{
+           position: absolute;
+           left: 0;
+           bottom: -25px;
+        }
+        .songItem{
+            margin-left: -20px;
+            width: 32vh;
+        }
+
     }
