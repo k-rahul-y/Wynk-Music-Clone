@@ -1,164 +1,86 @@
-*{
-    padding: 0;
-    margin: 0;
-    color: hsl(0, 0%, 100%);
-    /* box-sizing: border-box; */
-    font-family: 'Poppins', sans-serif;
-    border: none;
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
 }
-body{
-    width: 100%;
-    height: 100vh;
-    background-size: 100% 110vh;
-    position: relative;
-    background-repeat: no-repeat;
+body:before {
+	content: '';
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-image: url(https://i.postimg.cc/8cf6v1rk/1.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	-webkit-filter: blur(10px);
+	-moz-filter: blur(10px);
+	filter: blur(10px);
 }
-header{
-    position: absolute;
-    text-align: center;
-    width: 75%;
-    left: 12%;
-    top: 2rem;
+.contact-form {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	height: 350px;
+	padding: 80px 40px;
+	background: rgba(0, 0, 0, 0.5);
 }
-header h1{
-    font-size: 30px;
-}
-.empty{
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.5);
-    position: absolute;
-    top: 0px;
-    left: 0;
-    z-index: -1;
-}
+.avatar {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	overflow: hidden;
+	top: calc(-80px/2);
+    left: 160px; 
 
-.content{
-    display: flex;
-    min-height: 110vh;
 }
-.content section{
-    margin-top: 8vh;
-    margin-left: 20vh;
+.contact-form h2 {
+	margin: 0;
+	padding: 0 0 20px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
 }
-.content-form{
-    margin-top: 7rem;
+.contact-form p {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color: #fff;
 }
-section i{
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255,255,255,0.8);
-    color: black;
-    text-align: center;
+.contact-form input {
+	width: 100%;
+	margin-bottom: 20px;
 }
-.form{
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: 50%;
-    justify-content: center;
-    align-items: center;
-    min-height: 110vh;
+.contact-form input[type=email], .contact-form input[type=password] {
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
 }
-
-.form .contact-form input{
-    width: 30rem;
-    background-color: transparent;
-    border: 0px;
-    border: transparent;
-    margin: 20px;
-    padding: 10px;
-    font-size: 18px;
-    border-bottom: 2px solid #fff;
+.contact-form input[type=submit] {
+	height: 30px;
+	color: #fff;
+	font-size: 15px;
+	background: red;
+	cursor: pointer;
+	border-radius: 25px;
+	border: none;
+	outline: none;
+	margin-top: 15%;
 }
-.form .contact-form input ~ span{
-    position: absolute;
-    left: 20px;
-    transition: 0.9s ease-in-out;
-    margin-top: 10px;
+.contact-form a {
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
 }
-.form .contact-form input:focus ~span{
-    transform: translateY(-20px);
-    pointer-events: none;
-}
-.form .contact-form textarea{
-    width: 30rem;
-    border: 0px;
-    background-color: transparent;
-    margin: 20px;
-    font-size: 17px;
-    border-bottom: 2px solid white;
-}
-.form .contact-form textarea ~ span
-{
-    position: absolute;
-    left: 20px;
-    margin-top: 10px;
-    transition: 0.9s ease-in-out;
-}
-.form .contact-form textarea:focus ~span{
-    transform: translateY(-20px);
-    pointer-events: none;
-}
-.form .contact-form input[type=submit]{
-    background-color: dodgerblue;
-    border: 2px solid dodgerblue;
-    font-size: 18px;
-    width: 50%;
-    /* height: 40px; */
-    margin: 20px 20px;
-}
-.form .contact-form input[type=submit]:hover{
-    background-color: transparent;
-    color: dodgerblue;
-    font-family: sans-serif;
-    font-size: 20px;
-}
-.media{
-    position: absolute;
-    top: 85vh;
-    right: 20vh;
-    display: flex;
-    list-style: none;
-}
-.media li{
-    margin: 20px 30px;
-}
-@media screen and (max-width: 900px){
-    body{
-        background-repeat: repeat-y;
-        overflow: auto;
-    }
-    header{
-        position: absolute;
-        left: 0;
-        top: 20%;
-        width: 100%;
-    }
-    .empty{
-        height: 210vh;
-    }
-    .form{
-        position: absolute;
-        top: 100vh;
-        margin-left: 10%;
-    }
-    .content-form{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 0;
-        margin-top: 53vh;
-        margin-left: 10vh;
-    }
-    .content section{
-        margin-top: 0vh;
-        margin-left: 0vh;
-    }
-    .media{
-        position: absolute;
-        top: 190vh;
-        right: 30px;
-    }
+input[type=checkbox] {
+	width: 20%;
 }
